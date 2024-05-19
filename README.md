@@ -1,9 +1,9 @@
 
  ![atom](https://github.com/carloscamposb/React_Studies/assets/108171029/29c49e0d-bd29-4ec4-ab5c-64202bdee73f)
 
-English Version:
-
-# Hello Everyone,
+* English Version:
+____________
+## Hello Everyone,
 
 ### This area is dedicated to my studies and development in using React Native and other tools that work together for app development.
 
@@ -13,12 +13,12 @@ English Version:
 
 Best regards!
 
-Versão em Português:
-
+* Versão em Português:
+________________
 # Olá pessoal,
 
 ### Está área é dedicada a meus estudos e desenvolvimento na utilização do React Native e outras ferramentas como o Expo que trabalha em conjunto para desenvolvimento de aplicativos.
-### Cada pasta contém um arquivo markDown explicando a sua finalidade. 
+### Cada pasta contém um arquivo markdown explicando a sua finalidade. 
 
 
 
