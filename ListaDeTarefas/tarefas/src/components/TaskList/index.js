@@ -1,40 +1,56 @@
+// imports 
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity} from "react-native";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import {faTrash } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import * as Animatable from 'react-native-animatable';
 
-
+// Add the icons to the library
 library.add(faTrash);
 
 
+
+// TaskList component receives information from the data constant and the handledelete function
 export default function TaskList({data, handleDelete}){
     return(
-      
+            //animation when the page is opened 
          <Animatable.View 
          style={styles.container}
          animation="bounceIn"
          useNativeDriver
          
          >
-          
+               {/* specifications of the input format that is in the main component */}
             <View style={styles.activity}>
-                   <Text style={styles.textActvity}> {data.task} </Text>
-                <TouchableOpacity  onPress={() => handleDelete(data)} >
+
+                  {/* receives the data filled in the modal*/}
+                
+                <Text style={styles.textActvity}> {data.task} </Text>
+                 
+                   {/* when the trash icon is pressed, it triggers handleDelete to filter the list  */}
+                
+                <TouchableOpacity  onPress={() => handleDelete(data)} > 
+                
                  <FontAwesomeIcon icon={faTrash} size={20} color='white'  /> 
+                
                 </TouchableOpacity>
+            
             </View>
          </Animatable.View>
     )
 }
 
+// estyle
 const styles = StyleSheet.create({
 
+    // main
     container:{
         flex:1,
     },
 
+
+    // style of main component inputs
     activity:{
         display:'flex',
         flexDirection:'row',
@@ -58,6 +74,7 @@ const styles = StyleSheet.create({
 
     },
 
+    //text inside the main component input
     textActvity:{
           color: '#fff',
           fontSize:17,
