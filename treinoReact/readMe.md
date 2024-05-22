@@ -1,4 +1,4 @@
-#Treino 
+## Treino 
 
 > Iniciando um projeto com o Expo no React Native. E visualizando com o aplicativo Expo go.
 
